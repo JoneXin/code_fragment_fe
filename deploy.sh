@@ -12,7 +12,7 @@ front_name="code_fragment_fe"
 #               /leaper/roll/pmp_data_anaylse/pmp_roll_etl
 # 例如:2,基础服务：[leaper]  [基础服务]     [服务名]
 #               /leaper/base_service/kafka_zookeeper
-system_dir="/leaper/code_fragment_server/code_fragment_fe"
+system_dir="/leaper/code_fragment/code_fragment_fe"
 #-----------------------------------------------------------------------------------
 
 
