@@ -1,0 +1,84 @@
+.coder-box {
+    position: relative;
+    width: 70%;
+    height: 800px;
+    min-width: 400px;
+    margin: 0 auto;
+    border: 1px solid rgba(128, 128, 128, 0.468);
+    border-radius: 20px;
+    box-shadow: 4px 4px 20px rgba(128, 128, 128, 0.441);
+    margin-top: 20px;
+
+    >div {
+        height: 200px;
+        position: absolute;
+        width: 300px;
+        padding: 10px;
+        box-shadow: inset 0px 0px 10px rgba(128, 128, 128, 0.506);
+        border-radius: 20px;
+        border: 1px solid rgba(128, 128, 128, 0.415);
+        background-color: white;
+
+        .code-header {
+            display: flex;
+            padding: 0 10px;
+            align-items: center;
+            justify-content: space-between;
+            height: 50px !important;
+            border-bottom: 1px solid rgba(128, 128, 128, 0.502);
+        }
+
+        .code-content {
+            position: relative;
+            padding: 5px;
+            height: calc(100% - 50px) !important;
+
+
+            .code-desc {
+                // position: relative;
+                text-align: start;
+
+                .desc {
+                    line-height: 20px;
+                    margin: 10px;
+                    font-size: 14px;
+                    color: rgba(128, 128, 128, 0.726) !important;
+                    text-overflow: -o-ellipsis-lastline;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3; //行数
+                    line-clamp: 3;
+                    -webkit-box-orient: vertical;
+
+                }
+
+                >.time {
+                    font-size: 14px;
+                    position: absolute;
+                    right: 0;
+                    bottom: 4px;
+                    color: rgba(7, 84, 239, 0.875);
+                }
+            }
+
+            .code-editor {
+
+                >.code-edit-nav {
+                    display: flex;
+                    align-items: center;
+                    height: 50px;
+                    background-color: antiquewhite;
+                    padding: 0 20px;
+                }
+            }
+        }
+
+        >div {
+            height: 100% !important;
+            width: 100% !important;
+        }
+    }
+
+
+}
