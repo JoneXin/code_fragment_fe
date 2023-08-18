@@ -46,7 +46,7 @@ const Coder: FC<CoderProps> = (props: CoderProps) => {
             height: '800px',
             left: '0',
             top: 0,
-            duration: 1000,
+            duration: 0,
         });
     };
 
@@ -65,12 +65,15 @@ const Coder: FC<CoderProps> = (props: CoderProps) => {
             <Button style={{ marginLeft: 5 }} size="small" type="primary" onClick={() => handleCopyCode(idx)}>
                 复制
             </Button>
-            <Button style={{ marginLeft: 5 }} size="small" onClick={() => operateDetail(idx, true)}>
-                展开
-            </Button>
-            <Button style={{ marginLeft: 5 }} size="small" onClick={() => operateDetail(idx, false)}>
-                收起
-            </Button>
+            {systemStore.fragmentList[idx].show ? (
+                <Button style={{ marginLeft: 5 }} size="small" onClick={() => operateDetail(idx, false)}>
+                    收起
+                </Button>
+            ) : (
+                <Button style={{ marginLeft: 5 }} size="small" onClick={() => operateDetail(idx, true)}>
+                    展开
+                </Button>
+            )}
         </div>
     );
 

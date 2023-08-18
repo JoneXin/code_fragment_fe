@@ -28,7 +28,7 @@ const NewFragment: FC = (props: any, ref) => {
     const showJsonEditorModalRef = () => {
         // setCurConfIdx(idx);
         // const { configContent } = form.getFieldValue('config')[idx] || [];
-        (jsonEditorModalRef?.current as any).showModal(form.getFieldValue('content'));
+        (jsonEditorModalRef?.current as any).showModal(form.getFieldValue('content') || '');
     };
 
     const hideJsonEditorModalRef = () => {
